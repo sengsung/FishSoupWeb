@@ -1,8 +1,10 @@
 ﻿body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1em;
+    font-size: 5em;
     font-weight: 300;    
+    text-align:center;
     background-color:black;
-    color:white
+    color:white;
+    line-height:100vh;
 }
