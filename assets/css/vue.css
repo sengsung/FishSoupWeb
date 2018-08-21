@@ -1,0 +1,137 @@
+body{
+    margin:0px;
+    color : white;
+    text-align: center;
+    background-attachment: fixed;
+    background-size:cover;
+    word-break: keep-all;
+    background-color: black;
+}
+
+button{
+    border: none;
+    background-color:#555555;
+    padding:5px;
+    color:white;
+    font-size:1rem;
+    font-weight: 400;
+}
+h1{
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+h4{
+    font-size:2rem;
+    font-weight: 300;
+}
+
+h2{
+    font-size:1.7rem;
+    font-weight: 200;
+}
+
+h3{
+    font-weight: 100;
+}
+
+.h10{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.h11{
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.h12{
+    font-weight: 300;
+    font-size: 1rem;
+    position: absolute;
+    right: .5rem;
+    bottom: .5rem;
+}
+#title{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:100%;
+    background-image: url('/assets/img/background.png')
+}
+.list{
+    background-attachment: fixed;
+    background-repeat:   no-repeat;
+    background-position: center center;
+    background-size:100%;
+}
+.black{
+    background-color: rgba(0,0,0,0.6);
+}   
+
+.text_black{
+    color:black;
+}
+.box{
+    padding:80px 50px;
+}
+
+#list-2{
+    background-color:#f7fff7;
+    color:black;
+}
+
+#list-3{
+    background-color:#e8f1f2;
+    color:black;
+}
+.flex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.item{
+    box-shadow: 5px 5px 10px #ccc;
+    width: 15rem;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: .5rem .2rem 1rem;
+    padding: .5rem;
+    position: relative;
+    display:block;
+}
+
+#introduce{
+    color:black;
+    background-color: white;
+}
+
+p{
+    font-weight: 100;
+    font-size: 1.7rem;
+}
+
+#end{
+    background-color:#eadeea;
+    color:black;
+}
+.navigate{
+    height:50px;
+    width: 100vw;
+    position: fixed;
+    background-color: aliceblue;
+    transition: transform .3s;
+    color:black;
+    list-style: none;
+    
+}
+
+.navigate li{
+    float:left;
+    margin-top:14px;
+    margin-left:10px;
+}
+
+.navigate.hide {
+    transform: translateY(-100%);
+}
