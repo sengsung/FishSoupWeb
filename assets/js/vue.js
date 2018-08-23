@@ -141,6 +141,11 @@ var list3 = new Vue({
                 skill:"초급"
             },
             {
+                title:"Javascript",
+                year:"2018~",
+                skill:"초급"
+            },
+            {
                 title:"Node.js",
                 year:"2018~",
                 skill:"초급"
