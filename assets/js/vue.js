@@ -111,6 +111,26 @@ var list3 = new Vue({
                 skill:"초급"
             },
             {
+                title:"JAVA",
+                year:"2018~",
+                skill:"입문"
+            },
+            {
+                title:"Android(JAVA)",
+                year:"2018~",
+                skill:"입문"
+            },
+            {
+                title:"C",
+                year:"2015~",
+                skill:"중급"
+            },
+            {
+                title:"Python",
+                year:"2018~",
+                skill:"입문"
+            },
+            {
                 title:"HTML",
                 year:"2018~",
                 skill:"초급"
@@ -119,16 +139,6 @@ var list3 = new Vue({
                 title:"CSS",
                 year:"2018~",
                 skill:"초급"
-            },
-            {
-                title:"C",
-                year:"2015~",
-                skill:"중급"
-            },
-            {
-                title:"Android(JAVA)",
-                year:"2018~",
-                skill:"입문"
             },
             {
                 title:"Node.js",
