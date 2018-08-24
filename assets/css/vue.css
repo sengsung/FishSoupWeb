@@ -56,14 +56,14 @@ h3{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size:100%;
+    background-size:cover;
     background-image: url('/assets/img/background.png')
 }
 .list{
     background-attachment: fixed;
     background-repeat:   no-repeat;
     background-position: center center;
-    background-size:100%;
+    background-size:cover;
 }
 .black{
     background-color: rgba(0,0,0,0.6);
