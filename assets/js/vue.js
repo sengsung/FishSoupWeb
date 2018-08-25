@@ -23,7 +23,7 @@ var list1 = new Vue({
     data:{
         list:[
             {
-                title:'프로젝트',
+                title:'프로젝트 ',
                 color:'#92afd7',
                 sub:true,
                 name:'project'
