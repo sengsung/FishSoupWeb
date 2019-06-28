@@ -40,12 +40,14 @@ var list1 = new Vue({
                 img : "/assets/img/rice.jpg",
                 black:true
             },
+            /*
             {
                 title:'PL4YBOY',
                 text : ["PL4YBOY는 디미고인들이 모여 만든 워게임 사이트 입니다.","PL4YBOY 팀에서 백엔드 개발을 맡고 있습니다."],
                 img:"/assets/img/playboy.png",
                 black:false
             },
+            */
             {
                 title:'활동 경력',
                 color:'#d3f8e2',
