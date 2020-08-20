@@ -18,10 +18,13 @@
         height="263">
     </div>
 
-    <div id="label1" class="label" style="top: 50px; left: 113px;">첫번째</div>
-    <div id="label2" class="label" style="top: 125px; left: 190px; transform: rotate(90deg);">두번째</div>
-    <div id="label3" class="label" style="top: 200px; left: 115px; transform: rotate(180deg);">세번째</div>
-    <div id="label4" class="label" style="top: 125px; left: 30px; transform: rotate(270deg);">네번째</div>
+    <div id="label1" class="label" style="top: 50px; left: 113px;" onclick="setN(1)">첫번째</div>
+    <div id="label2" class="label" style="top: 125px; left: 190px; transform: rotate(90deg);" onclick="setN(2)">두번째
+    </div>
+    <div id="label3" class="label" style="top: 200px; left: 115px; transform: rotate(180deg);" onclick="setN(3)">세번째
+    </div>
+    <div id="label4" class="label" style="top: 125px; left: 30px; transform: rotate(270deg);" onclick="setN(4)">네번째
+    </div>
   </div>
 
   <div style="position: absolute; top: 300px">
@@ -44,6 +47,31 @@
 </style>
 
 <script>
+  const numMap = {
+    1: {
+      maxSpeed: 44,
+      randMax: 80,
+      randSub: 0,
+    },
+    2: {
+      maxSpeed: 43,
+      randMax: 80,
+      randSub: 15,
+    },
+    3: {
+      maxSpeed: 42,
+      randMax: 80,
+      randSub: 40,
+    },
+    4: {
+      maxSpeed: 45,
+      randMax: 80,
+      randSub: -5,
+    },
+  };
+
+  let n = 3;
+
   async function sleep(second) {
     return new Promise((resolve, reject) => {
       setTimeout(() => resolve(), second);
@@ -68,19 +96,22 @@
     let deg = 0;
     let speed = 0;
 
-    for (; speed < 43; speed += 0.2) {
+    for (; speed < numMap[n].maxSpeed; speed += 0.2) {
       deg += speed;
       deg %= 360;
       el.style.transform = `rotate(${deg}deg)`;
       await sleep(10);
     }
-    deg = (deg + getRandomInt(0, 80) - 15) % 360
+    deg = (deg + getRandomInt(0, numMap[n].randMax) - numMap[n].randSub) % 360
     for (; speed > 0; speed -= 0.2) {
       deg += speed;
       deg %= 360;
       el.style.transform = `rotate(${deg}deg)`;
       await sleep(10);
     }
+  }
+  function setN(num) {
+    n = num;
   }
 </script>
 
